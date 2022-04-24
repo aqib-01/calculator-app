@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+html.th-2 {
+  body {
+    @apply bg-2-light-gray;
+    p,
+    h2,
+    button,
+    span,
+    div {
+      @apply text-2-very-dark-cyan;
+    }
+    .theme-btn {
+      @apply bg-2-grayish-red;
+    }
+    .display-sect {
+      @apply bg-2-very-light-gray;
+      .input-nums {
+        @apply text-2-dark-mod-cyan;
+      }
+      .answer {
+        @apply text-2-very-dark-cyan;
+      }
+    }
+    .key-sect {
+      @apply bg-2-grayish-red;
+      .key {
+        @apply text-2-very-dark-cyan;
+      }
+    }
+  }
+}
+html.th-3 {
+  body {
+    @apply bg-3-very-dark-violet-main;
+    p,
+    h2,
+    button,
+    span,
+    div {
+      @apply text-3-light-yellow;
+    }
+    .theme-btn {
+      @apply bg-3-very-dark-violet-toggle;
+    }
+    .display-sect {
+      @apply bg-3-very-dark-violet-toggle;
+      .input-nums {
+        @apply text-3-light-yellow;
+      }
+      .answer {
+        @apply text-3-light-yellow;
+      }
+    }
+    .key-sect {
+      @apply bg-3-very-dark-violet-toggle;
+      .key {
+        @apply bg-3-very-dark-violet text-3-light-yellow shadow-3-very-dark-blue;
+      }
+    }
+  }
+}
+body {
+  @apply bg-1-dark-blue-main font-spartan;
+}
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+  @apply mx-auto;
+}
+.theme-btn {
+  @apply p-1.5 relative flex gap-2 bg-1-dark-blue-toggle-keypad rounded-full;
+
+  .circle {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    @apply bg-1-red rounded-full transition-transform;
+  }
+  button {
+    width: 20px;
+    height: 20px;
+    @apply rounded-full;
+  }
+}
+.theme-nums {
+  @apply p-1.5 gap-2 text-white flex items-center justify-between;
+  width: fit-content;
+  span {
+    width: 20px;
+    height: 20px;
+    @apply text-center font-semibold;
+  }
+}
+.display-sect {
+  @apply bg-1-dark-blue-screen mt-10 rounded-lg p-4 pb-3 relative;
+  .answer {
+    @apply block text-white text-2xl text-right;
+  }
+  .input-nums {
+    @apply text-right text-1-light-grayish-orange mt-2;
+  }
+}
+.key-sect {
+  @apply p-6 bg-1-dark-blue-toggle-keypad mt-8 rounded-lg grid grid-cols-12 gap-4;
+  .key {
+    box-shadow: 0 5px 1px;
+    @apply bg-1-light-grayish-orange rounded-lg text-1-very-dark-grayish-blue
+     pt-4 pb-2 col-span-3 shadow-1-dark-blue-key-shadow text-xl sm:text-3xl
+      active:shadow-none active:translate-y-1;
+  }
+}
+
+.operator-display {
+  @apply text-white absolute right-1;
+  top: 2.5rem;
+}

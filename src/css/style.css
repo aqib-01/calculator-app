@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+html.th-2 body {
+  @apply bg-2-light-gray;
+}
+
+html.th-2 body p,
+html.th-2 body h2,
+html.th-2 body button,
+html.th-2 body span,
+html.th-2 body div {
+  @apply text-2-very-dark-cyan;
+}
+
+html.th-2 body .theme-btn {
+  @apply bg-2-grayish-red;
+}
+
+html.th-2 body .display-sect {
+  @apply bg-2-very-light-gray;
+}
+
+html.th-2 body .display-sect .input-nums {
+  @apply text-2-dark-mod-cyan;
+}
+
+html.th-2 body .display-sect .answer {
+  @apply text-2-very-dark-cyan;
+}
+
+html.th-2 body .key-sect {
+  @apply bg-2-grayish-red;
+}
+
+html.th-2 body .key-sect .key {
+  @apply text-2-very-dark-cyan;
+}
+
+html.th-3 body {
+  @apply bg-3-very-dark-violet-main;
+}
+
+html.th-3 body p,
+html.th-3 body h2,
+html.th-3 body button,
+html.th-3 body span,
+html.th-3 body div {
+  @apply text-3-light-yellow;
+}
+
+html.th-3 body .theme-btn {
+  @apply bg-3-very-dark-violet-toggle;
+}
+
+html.th-3 body .display-sect {
+  @apply bg-3-very-dark-violet-toggle;
+}
+
+html.th-3 body .display-sect .input-nums {
+  @apply text-3-light-yellow;
+}
+
+html.th-3 body .display-sect .answer {
+  @apply text-3-light-yellow;
+}
+
+html.th-3 body .key-sect {
+  @apply bg-3-very-dark-violet-toggle;
+}
+
+html.th-3 body .key-sect .key {
+  @apply bg-3-very-dark-violet text-3-light-yellow shadow-3-very-dark-blue;
+}
+
+body {
+  @apply bg-1-dark-blue-main font-spartan;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+  @apply mx-auto;
+}
+
+.theme-btn {
+  @apply p-1.5 relative flex gap-2 bg-1-dark-blue-toggle-keypad rounded-full;
+}
+
+.theme-btn .circle {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  @apply bg-1-red rounded-full transition-transform;
+}
+
+.theme-btn button {
+  width: 20px;
+  height: 20px;
+  @apply rounded-full;
+}
+
+.theme-nums {
+  @apply p-1.5 gap-2 text-white flex items-center justify-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.theme-nums span {
+  width: 20px;
+  height: 20px;
+  @apply text-center font-semibold;
+}
+
+.display-sect {
+  @apply bg-1-dark-blue-screen mt-10 rounded-lg p-4 pb-3 relative;
+}
+
+.display-sect .answer {
+  @apply block text-white text-2xl text-right;
+}
+
+.display-sect .input-nums {
+  @apply text-right text-1-light-grayish-orange mt-2;
+}
+
+.key-sect {
+  @apply p-6 bg-1-dark-blue-toggle-keypad mt-8 rounded-lg grid grid-cols-12 gap-4;
+}
+
+.key-sect .key {
+  -webkit-box-shadow: 0 5px 1px;
+          box-shadow: 0 5px 1px;
+  @apply bg-1-light-grayish-orange rounded-lg text-1-very-dark-grayish-blue
+     pt-4 pb-2 col-span-3 shadow-1-dark-blue-key-shadow text-xl sm:text-3xl
+      active:shadow-none active:translate-y-1;
+}
+
+.operator-display {
+  @apply text-white absolute right-1;
+  top: 2.5rem;
+}
+/*# sourceMappingURL=style.css.map */
